@@ -1,11 +1,13 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // eliminar o comentar output: "export"
+  // output: "export",
+
+  // si quieres bundle para despliegue en contenedor:
   output: "standalone",
-  /* config options here */
-  typescript: {
-    ignoreBuildErrors: true,
-  },
+
+  typescript: { ignoreBuildErrors: true },
   reactStrictMode: false,
 };
 
